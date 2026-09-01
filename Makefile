@@ -8,7 +8,9 @@ BUILDDIR	=	build
 all: build
 
 build: 
-	make4ht -c $(CFG) -d ./$(BUILDDIR) ./$(TEX) 
+	make4ht -c $(CFG) -d ./$(BUILDDIR) ./$(TEX)
+	make4ht -m clean ./$(TEX)
+	rm -rf ./main.idx 
 
 clean:
 	rm -rf ./$(BUILDDIR)
