@@ -1,1 +1,0 @@
-# Ishan Hegde's website
